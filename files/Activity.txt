@@ -1,0 +1,1 @@
+[{"Date": "01/10/2014","Transaction": "Purchase Macys","rate":"99.99"},{"Date": "01/10/2014","Transaction": "Purchase Macys","rate":"99.99"}]

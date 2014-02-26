@@ -1,0 +1,120 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+<meta charset="utf-8">   
+<title>Example of Table with twitter bootstrap</title>   
+<meta name="description" content="Creating a table with Twitter Bootstrap. Learn how to use Twitter Bootstrap toolkit to create Tables with examples.">  
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">   
+<link href="simple-sidebar/css/simple-sidebar.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="new.js"></script>
+
+</head>  
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                </li>
+                <li><a id="trans" href="#">Transaction History</a>
+                </li>
+                <li><a id="convert" href="#">Currency Converter</a>
+                </li>
+                <li><a id="exchange" href="#">Exchange Rates</a>
+                </li>
+				<li><a id="config" href="#">Favorites</a>
+                </li>
+               
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="content-header">
+                <h1>
+                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                    
+                </h1>
+            </div>
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset" >
+                <div class="row">
+                    <div class="col-md-12" style="width:700px" id="transaction">
+							<table id="activity" class="table table-striped">  
+							<thead>  
+							  
+							</thead>  
+							<tbody>  
+							  
+							</tbody>  
+						  </table>
+					</div>
+                    
+                    <div class="col-md-12" style="width:700px" id="currency" style="visibility: hidden">
+							<table class="table">  
+							<tbody>  
+								<tr><h1>Currency Converter </h1></tr>
+							  <tr>
+								<td> Amount </td>
+								<td> <input id="amt" type="number" pattern="[0-9]+([\.][0-9]+)?" required placeholder="Enter Digits only"></td>
+							  </tr>
+							  <tr>
+								<td> From </td>
+								<td> <select id="mySelect" required></select></td>
+							  </tr>
+							  <tr>
+								<td> To </td>
+								<td> <select id="mySelect1" required></select></td>
+							  </tr>
+							  <tr>
+								<td> </td>
+								<td> <input id="sub" type="button"  value="submit"></td>
+							  </tr>
+							</tbody>  
+						  </table>
+					</div>
+					
+					<div class="col-md-12" style="width:700px" id="exchangerate" style="visibility: hidden">
+							<table class="table">  
+							<tbody>  
+								<tr><h1>Exchange Rate</h1></tr>
+							  <tr>
+								<td> From </td>
+								<td> <select id="eSelect"></select></td>
+							  </tr>
+							  <tr>
+								<td> To </td>
+								<td> <select id="eSelect1"></select></td>
+							  </tr>
+							  <tr>
+								<td> </td>
+								<td> <input id="esub" type="button"  value="submit"></td>
+							  </tr>
+							</tbody>  
+						  </table>
+					</div>
+					
+					<div class="col-md-12" style="width:800px" id="configuration" style="visibility: hidden">
+					
+							<table id="configtable" class="table"> 
+							<thead></thead>
+							<tbody></tbody>
+							</table>
+							<table> <div style="color: red" >Favorites is not complete </div></table>
+					</div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>
